@@ -11,3 +11,47 @@ header {
     padding: 10px 0;
     text-align: center;
 }
+
+.intro {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.project-container {
+    flex-grow: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #333;
+
+}
+
+.project {
+    background-color: #e2e2e2;
+
+    width: 40vw;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.handler {
+    background-color: #cb3b3b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #b1afaf;
+    width: 150px;
+    height: 200vh;
+}
