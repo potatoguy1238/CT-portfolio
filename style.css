@@ -1,23 +1,30 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
-header {
+header,
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .intro {
     padding: 20px;
     background-color: #f4f4f4;
     margin: 20px;
-    border-radius: 5px;
     margin-bottom: 60px;
+    height: 200px;
 }
 
 .project-container {
@@ -26,15 +33,16 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     height: flex;
-    width: 100%;
+    width: calc(100%);
     margin-bottom: 10px;
     background-color: #333;
+    margin: 120px;
+    margin-left: ;
 
 }
 
 .project {
     background-color: #e2e2e2;
-
     width: 40vw;
     height: 300px;
     margin: 10px;
@@ -44,14 +52,23 @@ header {
 
 .handler {
     background-color: #cb3b3b;
+    flex-grow: 1px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    height: flex;
     width: 100%;
 }
 
 .sidebar {
     background-color: #b1afaf;
     width: 150px;
-    height: 200vh;
+    height: 100vh;
+}
+
+.body {
+    background-color: #7a7a7a;
+    width: calc(100% - 150px);
+
+    height: 100vh;
 }
