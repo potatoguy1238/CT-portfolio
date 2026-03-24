@@ -10,24 +10,38 @@ body {
 
 header,
 footer {
-    margin-left: 150px;
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    padding-left: 15px;
+    padding-left: 169px;
+    max-width: calc(100% - 19px);
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 
+}
+
+.head-p {
+    padding: 10px;
+}
+
+.intro-box {
+    height: max-content;
+    width: calc(100%-150px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #797979;
 }
 
 .intro {
     padding: 20px;
+    margin: 10px;
     background-color: #f4f4f4;
-    margin: 20px;
-    margin-bottom: 60px;
     height: fit-content;
+    width: calc(50%-160px);
 }
 
 .project-container {
@@ -36,11 +50,48 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     height: flex;
-    width: calc(100%-150px);
+    width: calc(100%-160px);
     margin-bottom: 10px;
     background-color: #333;
     padding-block: 10px;
 
+}
+
+.toolbox {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    width: 150px;
+    height: 80%;
+
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #7a7a7a;
+
+}
+
+a {
+    width: 110px;
+    color: #ffffff;
+    background-color: #393939;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    outline: #333;
+}
+
+a:hover {
+    transition: 0.2s;
+    background-color: #4a4a4a;
+    padding: 11px;
+    margin: 4px;
 }
 
 .project {
@@ -54,7 +105,7 @@ footer {
 
 .project:hover {
     background-color: #c5c5c5;
-    transition: 0.5s;
+    transition: 0.2s;
     width: calc(100% / 2 - 10px);
     height: 310px;
     margin: auto;
@@ -69,12 +120,6 @@ footer {
     color: white;
 }
 
-.sidebar:hover {
-    transition: 0.5s;
-    background-color: #424242;
-}
-
-
 footer {
     bottom: 0;
     left: 0;
@@ -83,4 +128,24 @@ footer {
 
 .page-layout {
     padding-left: 150px;
+}
+
+.logo img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 200px;
+    padding: 10px;
+
+}
+
+.lorussoland-image img {
+    width: calc(100% / 10 - 20px);
+    padding: 0.1vw;
+}
+
+.lorussoland-image :hover {
+    transition: 0.5s;
+    padding: 1px;
+    width: calc(100% / 10 - 0.2vw);
 }
