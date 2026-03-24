@@ -19,16 +19,29 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 
+}
+
+.head-p {
+    padding: 10px;
+}
+
+.intro-box {
+    height: max-content;
+    width: calc(100%-150px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #797979;
 }
 
 .intro {
     padding: 20px;
+    margin: 10px;
     background-color: #f4f4f4;
-    margin: 20px;
-    margin-bottom: 60px;
     height: fit-content;
-    width: calc(100%-160px);
+    width: calc(50%-160px);
 }
 
 .project-container {
@@ -115,4 +128,24 @@ footer {
 
 .page-layout {
     padding-left: 150px;
+}
+
+.logo img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 200px;
+    padding: 10px;
+
+}
+
+.lorussoland-image img {
+    width: calc(100% / 10 - 20px);
+    padding: 0.1vw;
+}
+
+.lorussoland-image :hover {
+    transition: 0.5s;
+    padding: 1px;
+    width: calc(100% / 10 - 0.2vw);
 }
