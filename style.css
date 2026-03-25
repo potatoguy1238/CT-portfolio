@@ -147,5 +147,5 @@ footer {
 .lorussoland-image :hover {
     transition: 0.5s;
     padding: 1px;
-    width: calc(100% / 10 - 0.2vw);
+    width:100%;
 }
