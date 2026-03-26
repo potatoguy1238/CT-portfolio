@@ -1,0 +1,15 @@
+html {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+}
+
+.green {
+    position: fixed;
+    background-color: green;
+    width: 50vw;
+    height: 50vh;
+
+}
