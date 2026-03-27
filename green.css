@@ -1,15 +1,42 @@
 html {
     background-color: greenyellow;
     display: flex;
-    flex-direction: column;
-
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .green {
-    position: fixed;
     background-color: green;
     width: 50vw;
-    height: 50vh;
+    height: 20vw;
+    text-align: center;
+    color: lime;
+    font-family: "papyrus";
+    font-size: 7vw;
+}
 
+.links a {
+    width: 110px;
+    color: #ffffff;
+    background-color: #393939;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    outline: #333;
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    background-color: #7a7a7a;
+    width: max-content;
+    margin-block: 20px;
+}
+
+.links a:hover {
+    transition: 0.2s;
+    background-color: #4a4a4a;
+    padding: 11px;
+    margin: 4px;
 }

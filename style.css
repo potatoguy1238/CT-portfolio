@@ -24,7 +24,8 @@ footer {
 }
 
 .project img {
-    width: calc(60%)
+    width: 60%;
+    height: 60%;
 }
 
 .intro-box {
@@ -156,12 +157,12 @@ footer {
 }
 
 .lorussoland-image img {
-    width: calc(100% / 10 - 20px);
-    padding: 0.1vw;
+    width: calc(100% / 10 - 0.1vw);
+    padding: 0.2vw;
 }
 
 .lorussoland-image :hover {
-    transition: 0.5s;
-    padding: 1px;
-    width: 100%;
+    transition: 0.3s;
+    padding: 0;
+    width: calc(100% / 10 + 1vw);
 }
