@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -10,8 +12,8 @@ body {
 
 header,
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(30, 30, 30, 0.6);
+    color: white;
     padding: 10px 0;
     padding-inline: 10px;
     max-width: calc(100%);
@@ -34,7 +36,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #797979;
     justify-content: space-between;
 }
 
@@ -54,7 +55,7 @@ footer {
     height: flex;
     width: calc(100%);
     margin-bottom: 10px;
-    background-color: #333;
+    background-color: rgba(87, 87, 87, 0.5);
     padding-block: 10px;
 
 }
@@ -83,9 +84,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #2b2b2b;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 150px;
     height: 80%;
+    padding-block: 15px;
 
 }
 
@@ -94,36 +96,35 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #7a7a7a;
+    background-color: rgba(151, 151, 151, 0.1);
 
 }
 
 .sidebar a {
     width: 110px;
     color: #ffffff;
-    background-color: #393939;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     margin: 5px;
     text-decoration: none;
-    outline: #333;
 }
 
 .sidebar a:hover {
     transition: 0.2s;
-    background-color: #4a4a4a;
+    background-color: rgba(33, 33, 33, 0.7);
     padding: 11px;
     margin: 4px;
 }
 
 .project {
-    background-color: #b3b3b3;
+    background-color: rgb(24, 24, 24);
     width: calc(100% / 2 - 20px);
     height: 300px;
     margin: 10px;
     text-align: center;
     min-width: 200px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .project:hover {
@@ -137,7 +138,7 @@ footer {
 
 .sidebar {
     position: fixed;
-    background-color: #4d4d4d;
+    background-color: rgba(42, 42, 42, 0.6);
     width: 150px;
     height: 100%;
     color: white;
@@ -165,4 +166,11 @@ footer {
     transition: 0.3s;
     padding: 0;
     width: calc(100% / 10 + 1vw);
+}
+
+.background img {
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+
 }
