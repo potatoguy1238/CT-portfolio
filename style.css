@@ -10,9 +10,14 @@ body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header,
 footer {
-    background-color: rgba(30, 30, 30, 0.6);
+    background-color: rgba(30, 30, 30, 0.4);
     color: white;
     padding: 10px 0;
     padding-inline: 10px;
@@ -22,6 +27,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+    backdrop-filter: blur(1px);
 
 }
 
@@ -53,10 +59,8 @@ h1 {
 
 .head-a:hover {
     transition: 0.2s;
-    background-color: rgba(19, 19, 19, 0.7);
-    padding-inline: 12px;
-    padding-block: 3px;
-    margin: 3px;
+    background-color: rgba(114, 114, 114, 0.7);
+    transform: scale(1.05);
 }
 
 .project img {
@@ -76,10 +80,11 @@ h1 {
 .intro {
     padding: 20px;
     margin: 10px;
-    background-color: rgba(244, 244, 244, 0.8);
+    background-color: rgba(244, 244, 244, 0.5);
     height: fit-content;
     width: calc(50%);
     height: auto;
+    backdrop-filter: blur(2px);
 }
 
 .project-container {
@@ -87,27 +92,48 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: flex;
+    align-content: center;
     width: calc(100%);
     margin-bottom: 10px;
-    background-color: rgba(87, 87, 87, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     padding-block: 10px;
 
 }
 
-.bigbox {
-    background-color: rgba(8, 8, 8, 0.594);
-    width: calc(100% - 20px);
-    height: fit-content;
-    margin: 10px;
-    text-align: center;
-    min-width: 200px;
-    color: white;
+.bigbox-container {
+    flex-grow: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: calc(100%);
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-block: 10px;
+
 }
 
 .bigbox p {
-    font-size: 20pt;
-    margin-inline: 10px;
+    font-family: "Electrolize", sans-serif;
+    font-size: max(15px, 2vw);
+    margin-inline: 15px;
+
+}
+
+.bigbox {
+    background-color: rgba(73, 73, 73, 0.6);
+    backdrop-filter: blur(2px);
+    width: calc(100% - 20vw);
+    height: fit-content;
+    margin: 10px;
+    margin-block: 15px;
+    text-align: center;
+    color: white;
+}
+
+.logo :hover {
+    transition: 0.4s;
+    transform: scale(1.05);
 }
 
 .bigbox img {
@@ -119,7 +145,7 @@ h1 {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column;
     background-color: rgba(0, 0, 0, 0.3);
     width: 150px;
     height: 50%;
@@ -147,13 +173,13 @@ h1 {
 
 .sidebar a:hover {
     transition: 0.2s;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 12px;
-    margin: 3px;
+    background-color: rgba(130, 130, 130, 0.7);
+    transform: scale(1.1);
 }
 
 .project {
-    background-color: rgba(24, 24, 24, 0.7);
+    background-color: rgba(65, 65, 65, 0.6);
+    backdrop-filter: blur(1px);
     width: calc(100% / 2 - 20px);
     height: 300px;
     margin: 10px;
@@ -164,10 +190,10 @@ h1 {
 }
 
 .project:hover {
-    background-color: rgba(30, 30, 30, 0.6);
-    transition: 0.2s;
-    width: calc(100% / 2 - 10px);
-    height: 310px;
+    background-color: rgba(188, 188, 188, 0.6);
+    backdrop-filter: blur(2px);
+    transition: 0.3s;
+    transform: scale(1.035);
     margin: auto;
 
 }
@@ -175,6 +201,7 @@ h1 {
 .sidebar {
     position: fixed;
     background-color: rgba(42, 42, 42, 0.6);
+    backdrop-filter: blur(2px);
     width: 150px;
     height: 100%;
     color: white;
@@ -190,7 +217,7 @@ h1 {
     object-fit: cover;
     width: 200px;
     padding: 10px;
-
+    margin-right: 10px;
 }
 
 .lorussoland-image img {
@@ -199,13 +226,15 @@ h1 {
 }
 
 .lorussoland-image :hover {
-    transition: 0.3s;
-    padding: 0;
-    width: calc(100% / 10 + 1vw);
+    transition: 0.4s;
+    transform: scale(1.5);
+
 }
 
 .background img {
+    height: 100vh;
     width: 100vw;
+    object-fit: cover;
     position: fixed;
     z-index: -1;
 
