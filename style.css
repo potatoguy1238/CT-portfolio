@@ -10,11 +10,6 @@ body {
     width: 100%;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
 header,
 footer {
     background-color: rgba(30, 30, 30, 0.4);
@@ -64,8 +59,7 @@ h1 {
 }
 
 .project img {
-    width: 60%;
-    height: 60%;
+    max-height: 60%;
 }
 
 .intro-box {
