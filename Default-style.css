@@ -142,7 +142,7 @@ h1 {
     flex-flow: column;
     background-color: rgba(0, 0, 0, 0.3);
     width: 150px;
-    height: 50%;
+    height: fit-content;
     padding-block: 15px;
 
 }
@@ -257,4 +257,27 @@ h1 {
     height: auto;
     max-height: 300px;
     object-fit: scale-down;
+}
+
+.theme-toggle button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.theme-toggle button:hover {
+    transition: 0.2s;
+    background-color: rgba(130, 130, 130, 0.7);
+    transform: scale(1.1);
+}
+
+.theme-toggle button span {
+    color: rgb(208, 255, 0);
+    font-family: papyrus, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(242, 0, 255, 0.9);
+
 }

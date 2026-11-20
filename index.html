@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Electrolize&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" id="default-stylesheet">
-    <link rel="stylesheet" href="Cursed-style.css" id="Cursed-stylesheet" disabled>
+    <link rel="stylesheet" href="Default-style.css" id="theme-default">
+    <link rel="stylesheet" href="Cursed-style.css" id="theme-Cursed" disabled>
+    <link rel="stylesheet" href="Boring-style.css" id="theme-Boring" disabled>
 
 </head>
 
@@ -31,8 +32,53 @@
                 <a href="bread.html">bread</a>
                 <a href="green.html">green</a>
             </nav>
+            <p>settings</p>
+            <nav class="links">
+                <div class="theme-toggle">
+                    <button class="theme-button" data-theme="default"><span>DEFAULT</span> Mode</button>
+                    <button class="theme-button" data-theme="cursed"><span>SPOOKY</span> Mode</button>
+                    <button class="theme-button" data-theme="boring"><span>BORING</span> Mode</button>
 
+                    <script>
+                        const buttons = document.querySelectorAll('.theme-button');
+                        const themes = {
+                            default: document.getElementById('theme-default'),
+                            cursed: document.getElementById('theme-Cursed'),
+                            boring: document.getElementById('theme-Boring')
+                        };
 
+                        // Function to apply the chosen theme
+                        function setTheme(chosenTheme) {
+                            // Step 1: Loop through all themes and disable them
+                            Object.keys(themes).forEach(key => {
+                                themes[key].disabled = true;
+                            });
+
+                            // Step 2: Enable the selected theme if it exists
+                            if (themes[chosenTheme]) {
+                                themes[chosenTheme].disabled = false;
+                                // Step 3: Remember the user's choice
+                                localStorage.setItem('activeTheme', chosenTheme);
+                            }
+                        }
+
+                        // Check for a previously saved theme on page load
+                        const savedTheme = localStorage.getItem('activeTheme');
+                        if (savedTheme) {
+                            setTheme(savedTheme);
+                        }
+
+                        // Add click event listeners to all buttons dynamically
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                const selectedTheme = button.getAttribute('data-theme');
+                                setTheme(selectedTheme);
+                            });
+                        });
+                    </script>
+                </div>
+
+            </nav>
         </div>
     </div>
     <div class=" page-layout">
@@ -53,15 +99,6 @@
                 <p>This is my portfolio website: featuring my projects and skills</p>
             </div>
 
-            <div class="light/dark toggle">
-                <button id="toggle-cursed-mode">Toggle <span>SPOOKY</span> Mode</button>
-                <script>
-                    const toggleButton = document.getElementById('toggle-cursed-mode');
-                    toggleButton.addEventListener('click', () => {
-                        document.getElementById('Cursed-stylesheet').disabled = !document.getElementById('Cursed-stylesheet').disabled;
-                    });
-                </script>
-            </div>
 
             <a class="logo" href="html-temlplate.html">
                 <img src="pfp.png" alt="shrenk">
